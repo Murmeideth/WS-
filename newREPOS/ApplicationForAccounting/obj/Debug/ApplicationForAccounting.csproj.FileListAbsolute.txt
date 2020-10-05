@@ -1,0 +1,12 @@
+H:\newREPOS\ApplicationForAccounting\bin\Debug\ApplicationForAccounting.exe.config
+H:\newREPOS\ApplicationForAccounting\bin\Debug\ApplicationForAccounting.exe
+H:\newREPOS\ApplicationForAccounting\bin\Debug\ApplicationForAccounting.pdb
+H:\newREPOS\ApplicationForAccounting\obj\Debug\ApplicationForAccounting.Form1.resources
+H:\newREPOS\ApplicationForAccounting\obj\Debug\ApplicationForAccounting.Properties.Resources.resources
+H:\newREPOS\ApplicationForAccounting\obj\Debug\ApplicationForAccounting.csproj.GenerateResource.cache
+H:\newREPOS\ApplicationForAccounting\obj\Debug\ApplicationForAccounting.csproj.CoreCompileInputs.cache
+H:\newREPOS\ApplicationForAccounting\obj\Debug\ApplicationForAccounting.exe
+H:\newREPOS\ApplicationForAccounting\obj\Debug\ApplicationForAccounting.pdb
+H:\newREPOS\ApplicationForAccounting\obj\Debug\ApplicationForAccounting.CreateForm.resources
+H:\newREPOS\ApplicationForAccounting\obj\Debug\ApplicationForAccounting.ReadForm.resources
+H:\newREPOS\ApplicationForAccounting\obj\Debug\ApplicationForAccounting.ChangeForm.resources

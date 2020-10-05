@@ -1,0 +1,6 @@
+H:\newREPOS\SomeCalculate\SomeCalculate\bin\Debug\SomeCalculate.dll
+H:\newREPOS\SomeCalculate\SomeCalculate\bin\Debug\SomeCalculate.pdb
+H:\newREPOS\SomeCalculate\SomeCalculate\obj\Debug\SomeCalculate.csprojAssemblyReference.cache
+H:\newREPOS\SomeCalculate\SomeCalculate\obj\Debug\SomeCalculate.csproj.CoreCompileInputs.cache
+H:\newREPOS\SomeCalculate\SomeCalculate\obj\Debug\SomeCalculate.dll
+H:\newREPOS\SomeCalculate\SomeCalculate\obj\Debug\SomeCalculate.pdb
