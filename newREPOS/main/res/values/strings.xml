@@ -1,0 +1,24 @@
+<resources>
+    <string name="app_name">NotePad</string>
+    <string name="action_save">Сохранить</string>
+    <string name="action_clear">Очистить</string>
+    <string name="action_settings">Настройки</string>
+    <string name="action_open">Открыть</string>
+
+    <string name="pref_opeMode">Режим открытия</string>
+    <string name="pref_color">Цвет шрифта</string>
+    <string name="pref_color_black">Черный</string>
+    <string name="pref_color_red">Красный</string>
+    <string name="pref_color_green">Зеленый</string>
+    <string name="pref_color_blue">Синий</string>
+    <string name="pref_size">Размер</string>
+    <string name="pref_style">Стиль</string>
+    <string name="pref_style_regular">Нормальный</string>
+    <string name="pref_style_bold">Жирный</string>
+    <string name="pref_style_italic">Курсив</string>
+
+    <string name="button_newNote">Добавить</string>
+    <string name="Empty_field">Здесь пока пусто</string>
+
+
+</resources>
