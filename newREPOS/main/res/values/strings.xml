@@ -1,24 +1,13 @@
 <resources>
-    <string name="app_name">NotePad</string>
-    <string name="action_save">Сохранить</string>
-    <string name="action_clear">Очистить</string>
-    <string name="action_settings">Настройки</string>
-    <string name="action_open">Открыть</string>
-
-    <string name="pref_opeMode">Режим открытия</string>
-    <string name="pref_color">Цвет шрифта</string>
-    <string name="pref_color_black">Черный</string>
-    <string name="pref_color_red">Красный</string>
-    <string name="pref_color_green">Зеленый</string>
-    <string name="pref_color_blue">Синий</string>
-    <string name="pref_size">Размер</string>
-    <string name="pref_style">Стиль</string>
-    <string name="pref_style_regular">Нормальный</string>
-    <string name="pref_style_bold">Жирный</string>
-    <string name="pref_style_italic">Курсив</string>
-
-    <string name="button_newNote">Добавить</string>
-    <string name="Empty_field">Здесь пока пусто</string>
-
-
+    <string name="app_name">Holidays</string>
+    <string name="Refresh_button">Обновить</string>
+    <string name="Add_event">Добавить</string>
+    <string name="Delete_event">Удалить</string>
+    <string name="Delete_emp_text">Введите номер удаляемого сотрудника:</string>
+    <string name="Delete_doc_text">Введите номер удаляемого документа:</string>
+    <string name="delete_text">Введите номер удаляемого события:</string>
+    <string name="doc_but">Документы</string>
+    <string name="emp_but">Работники</string>
+    <string name="mainField">Text for main field</string>
+    <string name="back">Назад</string>
 </resources>
