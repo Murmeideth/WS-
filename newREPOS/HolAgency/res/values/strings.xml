@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">Holidays</string>
+    <string name="Refresh_button">Обновить</string>
+    <string name="Add_event">Добавить</string>
+    <string name="Delete_event">Удалить</string>
+    <string name="Delete_emp_text">Введите номер удаляемого сотрудника:</string>
+    <string name="Delete_doc_text">Введите номер удаляемого документа:</string>
+    <string name="delete_text">Введите номер удаляемого события:</string>
+    <string name="doc_but">Документы</string>
+    <string name="emp_but">Работники</string>
+    <string name="mainField">Text for main field</string>
+    <string name="back">Назад</string>
+</resources>
