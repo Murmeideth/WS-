@@ -1,0 +1,25 @@
+<resources>
+    <string name="app_name">StudUChet</string>
+    <string name="button_back">Назад</string>
+    <string name="button_add">Добавить</string>
+    <string name="button_delete">Удалить</string>
+    <string name="button_groups">Группы</string>
+    <string name="button_cur">Кураторы</string>
+
+    <string name="add_stud_text_ID">ID</string>
+    <string name="add_stud_text_NAME">ФИО</string>
+    <string name="add_stud_text_GROUP">Группа</string>
+    <string name="add_stud_text_CURATOR">Куратор</string>
+    <string name="add_text_field">Введите текст</string>
+    <string name="add_text_upper">Введите вносимые данные</string>
+
+    <string name="delete_stud_text_upper">Введите номер удаляемого студента</string>
+    <string name="delete_group_upper">Введите номер удаляемой группы</string>
+    <string name="delete_cur_upper">Введите номер удаляемого куратора</string>
+
+    <string name="group_code">Код группы</string>
+    <string name="group_desc">Наименование</string>
+
+    <string name="curator_position">Должность</string>
+
+</resources>

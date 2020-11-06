@@ -1,0 +1,312 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mainLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/view_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <Button
+            android:id="@+id/add_stud"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="16dp"
+            android:layout_marginBottom="16dp"
+            android:onClick="onClick"
+            android:shadowColor="#5C5B5B"
+            android:shadowDx="@dimen/cardview_compat_inset_shadow"
+            android:shadowDy="@dimen/cardview_compat_inset_shadow"
+            android:shadowRadius="@dimen/cardview_compat_inset_shadow"
+            android:text="@string/button_add"
+            app:backgroundTint="@color/teal_200"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+        <TextView
+            android:id="@+id/mainField"
+            android:layout_width="432dp"
+            android:layout_height="600dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="16dp"
+            android:background="#F1F1F1"
+            android:lineSpacingExtra="8sp"
+            android:lines="@android:integer/config_longAnimTime"
+            android:singleLine="true"
+            android:textColor="#000000"
+            app:firstBaselineToTopHeight="@dimen/cardview_compat_inset_shadow"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:lineHeight="@dimen/cardview_compat_inset_shadow" />
+
+        <Button
+            android:id="@+id/goto_cur"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:layout_marginEnd="90dp"
+            android:onClick="onClick"
+            android:shadowColor="#5C5B5B"
+            android:shadowDx="@dimen/cardview_compat_inset_shadow"
+            android:shadowDy="@dimen/cardview_compat_inset_shadow"
+            android:shadowRadius="@dimen/cardview_compat_inset_shadow"
+            android:text="@string/button_cur"
+            app:backgroundTint="@color/teal_200"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/mainField" />
+
+        <Button
+            android:id="@+id/stud_del"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginBottom="16dp"
+            android:onClick="onClick"
+            android:shadowColor="#5C5B5B"
+            android:shadowDx="@dimen/cardview_compat_inset_shadow"
+            android:shadowDy="@dimen/cardview_compat_inset_shadow"
+            android:shadowRadius="@dimen/cardview_compat_inset_shadow"
+            android:text="@string/button_delete"
+            app:backgroundTint="@color/teal_200"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <Button
+            android:id="@+id/goto_groups"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="90dp"
+            android:layout_marginTop="15dp"
+            android:onClick="onClick"
+            android:shadowColor="#5C5B5B"
+            android:shadowDx="@dimen/cardview_compat_inset_shadow"
+            android:shadowDy="@dimen/cardview_compat_inset_shadow"
+            android:shadowRadius="@dimen/cardview_compat_inset_shadow"
+            android:text="@string/button_groups"
+            app:backgroundTint="@color/teal_200"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/mainField" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/add_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#FFFFFF"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/add_stud_label_id"
+            android:layout_width="38dp"
+            android:layout_height="33dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="100dp"
+            android:text="@string/add_stud_text_ID"
+            android:textAlignment="center"
+            android:textColor="#000000"
+            android:textSize="24sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/add_stud_label_Name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:text="@string/add_stud_text_NAME"
+            android:textColor="#000000"
+            android:textSize="24sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/add_stud_label_id" />
+
+        <TextView
+            android:id="@+id/add_stud_label_group"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:text="@string/add_stud_text_GROUP"
+            android:textColor="#000000"
+            android:textSize="24sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/add_stud_label_Name" />
+
+        <TextView
+            android:id="@+id/add_stud_label_curator"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:text="@string/add_stud_text_CURATOR"
+            android:textColor="#000000"
+            android:textSize="24sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/add_stud_label_group" />
+
+        <EditText
+            android:id="@+id/input_id_stud"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="95dp"
+            android:layout_marginEnd="70dp"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:text="@string/add_text_field"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <EditText
+            android:id="@+id/input_name_stud"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="3dp"
+            android:layout_marginEnd="70dp"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:text="@string/add_text_field"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/input_id_stud" />
+
+        <EditText
+            android:id="@+id/input_group_stud"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="3dp"
+            android:layout_marginEnd="70dp"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:text="@string/add_text_field"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/input_name_stud" />
+
+        <EditText
+            android:id="@+id/input_curator_student"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="3dp"
+            android:layout_marginEnd="70dp"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:text="@string/add_text_field"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/input_group_stud" />
+
+        <Button
+            android:id="@+id/add_stud_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="16dp"
+            android:layout_marginBottom="345dp"
+            android:onClick="onClick"
+            android:text="@string/button_add"
+            app:backgroundTint="@color/teal_200"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+        <Button
+            android:id="@+id/add_button_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginBottom="345dp"
+            android:onClick="onClick"
+            android:text="@string/button_back"
+            app:backgroundTint="@color/teal_200"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <TextView
+            android:id="@+id/textView6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="52dp"
+            android:layout_marginTop="25dp"
+            android:layout_marginEnd="53dp"
+            android:text="@string/add_stud_text_upper"
+            android:textColor="#000000"
+            android:textSize="24sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/delete_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#FFFFFF"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/delete_stud_label_upper"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp"
+            android:text="@string/delete_stud_text_upper"
+            android:textAlignment="center"
+            android:textColor="#000000"
+            android:textSize="24sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <EditText
+            android:id="@+id/input_delete_stud_id"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="101dp"
+            android:layout_marginTop="90dp"
+            android:layout_marginEnd="100dp"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:text="@string/add_text_field"
+            android:textAlignment="center"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/delete_stud_label_upper" />
+
+        <Button
+            android:id="@+id/delete_back_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="115dp"
+            android:onClick="onClick"
+            android:text="@string/button_back"
+            app:backgroundTint="@color/teal_200"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/input_delete_stud_id" />
+
+        <Button
+            android:id="@+id/delete_stud_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="115dp"
+            android:layout_marginEnd="16dp"
+            android:onClick="onClick"
+            android:text="@string/button_delete"
+            app:backgroundTint="@color/teal_200"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/input_delete_stud_id" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
