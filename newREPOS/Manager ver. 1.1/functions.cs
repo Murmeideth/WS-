@@ -352,7 +352,7 @@ namespace Manager
         public void FindQuestDate(TextBox One, TextBox Two, ListView List, System.Windows.Forms.CheckBox Check)
         {
             int status = Convert.ToInt16(Check.Checked);
-            string query = "select q.id_quest, q.desc, c.desc, e.name, if(q.status = 0, 'Выполняется', 'Выполнено'), q.quest_date from quest_list as q, category as c, emplo as e where q.id_cat = c.id_cat and q.id_emplo_resp = e.id_emplo and q.status = " + status +" and (q.quest_date >@'"+ One.Text + "' and q.quest_date <@'" + Two.Text + "') order by q.id_quest ;";
+            string query = "select q.id_quest, q.desc, c.desc, e.name, if(q.status = 0, 'Выполняется', 'Выполнено'), q.quest_date from quest_list as q, category as c, emplo as e where q.id_cat = c.id_cat and q.id_emplo_resp = e.id_emplo and q.status = " + status +" and q.quest_date between '"+ One.Text + "' and '" + Two.Text + "' order by q.id_quest ;";
             MySqlConnection conn = DBUtils.GetDBConnection();
             MySqlCommand cmDB = new MySqlCommand(query, conn);
             cmDB.CommandTimeout = 60;
